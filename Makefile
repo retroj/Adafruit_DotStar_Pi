@@ -11,7 +11,7 @@ dotstar.so: dotstar.o
 	gcc -s -shared -Wl,-soname,libdotstar.so,-L/opt/vc/lib,-lbcm_host -o $@ $<
 
 .c.o:
-	gcc $(CFLAGS) -c $<
+	gcc $(CFLAGS) `python3-config --cflags` -c $<
 
 clean:
 	rm -f dotstar.o dotstar.so

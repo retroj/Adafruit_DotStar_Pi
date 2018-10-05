@@ -54,7 +54,7 @@
   License along with NeoPixel.  If not, see <http://www.gnu.org/licenses/>.
   ------------------------------------------------------------------------*/
 
-#include <python3.5/Python.h>
+#include <Python.h>
 #include <fcntl.h>
 #include <sys/mman.h>
 #include <sys/ioctl.h>
